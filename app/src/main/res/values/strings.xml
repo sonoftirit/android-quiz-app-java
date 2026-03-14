@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">90834763LAB3Q1</string>
+    <string-array name="question_counts">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="quiz_categories">
+        <item>Canadian Capitals</item>
+        <item>About Canada</item>
+        <item>Canadian Mountains</item>
+    </string-array>
+</resources>
