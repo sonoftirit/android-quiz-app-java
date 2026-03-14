@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -42,6 +43,14 @@ public class MainActivity extends AppCompatActivity {
         btnLoadQuiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (spinnerQuestions.getSelectedItemPosition() == 0 ||
+                        spinnerCategory.getSelectedItemPosition() == 0) {
+                    Toast.makeText(MainActivity.this,
+                            "Please select number of questions and category",
+                            Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 String selectedQuestionCount = spinnerQuestions.getSelectedItem().toString();
                 String selectedCategory = spinnerCategory.getSelectedItem().toString();
 

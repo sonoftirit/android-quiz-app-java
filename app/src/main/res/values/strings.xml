@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">90834763LAB3Q1</string>
     <string-array name="question_counts">
+        <item>Select number of questions</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
@@ -8,6 +9,7 @@
     </string-array>
 
     <string-array name="quiz_categories">
+        <item>Select category</item>
         <item>Canadian Capitals</item>
         <item>About Canada</item>
         <item>Canadian Mountains</item>
